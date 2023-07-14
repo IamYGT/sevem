@@ -1,0 +1,134 @@
+<footer>
+	{% if block3 %}
+		{{ block3 }}
+	{% endif %}
+	<div class="footer-static">
+		<div class="container">
+			<div class="container-inner">
+				<div class="row">
+					<div class="col-xs-12 col-sm-12 col-md-3">
+						<div class="col col1">
+							<div class="footer-title"><h2>{{ text_contact }}</h2></div>
+							<div class="footer-content">
+								<p class="phone">{{ text_phone }}<span>{{ telephone }}</span></p>
+								<p class="address">{{ address }}</p>
+								<p class="email">{{ email }}</p>
+								{% if block4 %}
+									{{ block4 }}
+								{% endif %}
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-2">
+						<div class="col col2">
+							<div class="footer-title"><h2>{{ text_information }}</h2></div>
+							<div class="footer-content">
+								<ul class="list-unstyled">
+									{% for information in informations %}
+										<li><a href="{{ information.href }}">{{ information.title }}</a></li>
+									{% endfor %}
+									<li><a href="{{ voucher }}">{{ text_voucher }}</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-2">
+						<div class="col col3">
+							<div class="footer-title"><h2>{{ text_service }}</h2></div>
+							<div class="footer-content">
+								<ul class="list-unstyled">
+									<li><a href="{{ contact }}">{{ text_contact }}</a></li>
+									<li><a href="{{ return }}">{{ text_return }}</a></li>
+									<li><a href="{{ sitemap }}">{{ text_sitemap }}</a></li>
+									<li><a href="{{ manufacturer }}">{{ text_manufacturer }}</a></li>
+									<li><a href="{{ special }}">{{ text_special }}</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-xs-12 col-sm-12 col-md-2">
+						<div class="col col4">
+							<div class="footer-title"><h2>{{ text_extra }}</h2></div>
+							<div class="footer-content">
+								<ul class="list-unstyled">
+									<li><a href="{{ contact }}">{{ text_voucher }}</a></li>
+									<li><a href="{{ return }}">{{ text_affiliate }}</a></li>
+									<li><a href="{{ sitemap }}">{{ text_account }}</a></li>
+									<li><a href="{{ manufacturer }}">{{ text_order }}</a></li>
+									<li><a href="{{ special }}">{{ text_wishlist }}</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-12 col-md-3 col-xs-12">
+						<div class="col col5">
+							<div class="footer-title">
+								<h2>{{ text_get_app }}</h2>
+							</div>
+							<div class="footer-content">
+								<p class="description-app">{{ text_description_app }}</p>
+								{% if block5 %}
+									{{ block5 }}
+								{% endif %}
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		{% if block6 %}
+			{{ block6 }}
+		{% endif %}
+	</div>
+	<div class="footer-bottom">
+		<div class="container">	
+			<div class="row">
+				<div class="col-md-5 col-sm-12 col-sms-12">
+					<div id="back-top">{{ text_backtop }}</div>
+					<p class="copyright-text">{{ powered }}</p>
+				</div>
+				<div class="col-md-7 col-sm-12 col-sms-12">
+					{% if block7 %}
+						{{ block7 }}
+					{% endif %}
+
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<script type="text/javascript">
+$(document).ready(function(){
+	// hide #back-top first
+	$("#back-top").hide();
+	// fade in #back-top
+	$(function () {
+		$(window).scroll(function () {
+			if ($(this).scrollTop() > 300) {
+				$('#back-top').fadeIn();
+			} else {
+				$('#back-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-top').click(function () {
+			$('body,html').animate({scrollTop: 0}, 800);
+			return false;
+		});
+	});
+	if (jQuery(window).width() < 992) {   
+		jQuery('.footer-static .footer-title').click(function(){     
+			jQuery(this).parent('.col').toggleClass('active').siblings().removeClass('active'); 
+			jQuery(this).next('.col .footer-content').toggle(300);
+			jQuery(this).parent('.col.active').siblings().children('.col .footer-content').slideUp(300); 
+		}); 
+		 
+	}
+});
+</script>
+<!--
+OpenCart is open source software and you are free to remove the powered by OpenCart if you want, but its generally accepted practise to make a small donation.
+Please donate via PayPal to donate@opencart.com
+//-->
+</div><!-- wrapper -->
+</body></html>

@@ -1,0 +1,55 @@
+---------- Date: 2020-10-21 11:25:48 ~ IP : 31.206.49.41 ----------
+REQUEST URI : /admin/index.php?route=common/dashboard&user_token=49xReds6TYyRucJdoSEQDUv3M05Wp71U
+MOD DETAILS:
+   modFile   : /var/www/vhosts/sevem.com.tr/httpdocs/vqmod/xml/seopack.xml
+   id        : 
+   version   : 3.x
+   vqmver    : 
+   author    : OpencartUzman
+VQModObject::parseMods - Could not resolve path for [catalog/controller/product/category.php|catalog/controller/product/manufacturer.php|catalog/controller/product/special.php] (SKIPPED)
+----------------------------------------------------------------------
+
+
+---------- Date: 2020-10-21 11:30:38 ~ IP : 31.206.49.41 ----------
+REQUEST URI : /index.php?route=checkout/cart
+MOD DETAILS:
+   modFile   : /var/www/vhosts/sevem.com.tr/httpdocs/vqmod/xml/seopack.xml
+   id        : 
+   version   : 3.x
+   vqmver    : 
+   author    : OpencartUzman
+VQModObject::parseMods - Could not resolve path for [catalog/controller/product/category.php|catalog/controller/product/manufacturer.php|catalog/controller/product/special.php] (SKIPPED)
+
+File Name    : system/library/template/twig.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $file = DIR_TEMPLATE . $filename . '.twig';
+----------------------------------------------------------------------
+
+
+---------- Date: 2020-10-21 11:30:48 ~ IP : 31.206.49.41 ----------
+REQUEST URI : /admin/index.php?route=marketplace/modification&user_token=49xReds6TYyRucJdoSEQDUv3M05Wp71U
+MOD DETAILS:
+   modFile   : /var/www/vhosts/sevem.com.tr/httpdocs/vqmod/xml/fix-ocmod-twig-3.0.3.6.xml
+   id        : 
+   version   : 3.0.3.6
+   vqmver    : 
+   author    : OpencartUzman
+
+File Name    : system/library/template/twig.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $file = DIR_TEMPLATE . $filename . '.twig';
+----------------------------------------------------------------------
+
+
+---------- Date: 2020-10-21 18:07:07 ~ IP : 176.237.194.235 ----------
+REQUEST URI : /admin/index.php?route=marketplace/modification&user_token=sTO57rhzz2xIldeU5p4oespq5tHUxfdg
+MOD DETAILS:
+   modFile   : /var/www/vhosts/sevem.com.tr/httpdocs/vqmod/xml/fix-ocmod-twig-3.0.3.6.xml
+   id        : 
+   version   : 3.0.3.6
+   vqmver    : 
+   author    : OpencartUzman
+
+File Name    : system/library/template/twig.php(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): $file = DIR_TEMPLATE . $filename . '.twig';
+----------------------------------------------------------------------
+
+

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modification>
+	<name>fix-ocmod-twig-3.0.3.6</name>
+	<version>3.0.3.6</version>
+	<author>OpencartUzman</author>
+
+	<file path="system/library/template/twig.php" error="skip" info="fix Core Opencart twig files modification">
+		<operation>
+			<search><![CDATA[$file = DIR_TEMPLATE . $filename . '.twig';]]></search>
+			<add position="replace"><![CDATA[$file = modification( DIR_TEMPLATE . $filename . '.twig' );
+			if( class_exists('VQMod') ) {
+				$file = \VQMod::modCheck($file);
+			}
+			]]></add>
+		</operation>
+	</file>
+
+</modification>
